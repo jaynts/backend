@@ -40,7 +40,7 @@ const registerUser= asyncHandler(async(req,res)=>{
    const coverImage=await uploadOnCloudinary(coverImageLocalPath)
 
    if(!avatar){
-    throw new ApiError(400,"Avatar not uploafed");
+    throw new ApiError(400,"Avatar not uploaded");
    }
    const user = User.create({
     fullName,
